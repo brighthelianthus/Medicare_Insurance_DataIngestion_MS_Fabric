@@ -1,0 +1,12 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Lakehouse",
+    "displayName": "medicare_LH",
+    "description": ""
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "fb960e2c-9614-4d44-aa37-54db2a2b1d5e"
+  }
+}

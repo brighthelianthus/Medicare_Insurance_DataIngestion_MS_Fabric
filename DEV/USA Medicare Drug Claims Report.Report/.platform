@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "USA Medicare Drug Claims Report"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "8d3ca8f5-ac11-423e-be15-ce2bad2739cb"
+  }
+}

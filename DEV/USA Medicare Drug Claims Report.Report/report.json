@@ -1,0 +1,177 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.59\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"linguisticSchemaSyncVersion\":0,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}],\"outspacePane\":[{\"properties\":{\"expanded\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 3",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "1fc8afe075b0accce736",
+      "ordinal": 2,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"7a780e558923079b7060\",\"layouts\":[{\"id\":0,\"position\":{\"x\":633.2947809044497,\"y\":0,\"z\":1,\"width\":646.6742481066564,\"height\":712.4566285175059,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"vw_dim_drug.Gnrc_Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_30day_Fills)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v1\",\"Entity\":\"vw_dim_drug\",\"Type\":0},{\"Name\":\"v\",\"Entity\":\"vw_fact_drug_sales_by_geo_provider\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"Gnrc_Name\"},\"Name\":\"vw_dim_drug.Gnrc_Name\",\"NativeReferenceName\":\"Generic Name of Drug\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Tot_30day_Fills\"}},\"Function\":0},\"Name\":\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_30day_Fills)\",\"NativeReferenceName\":\"Total 30day Fills\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Tot_30day_Fills\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_30day_Fills)\":{\"displayName\":\"Total 30day Fills\",\"formatString\":\"0.00\"},\"vw_dim_drug.Gnrc_Name\":{\"displayName\":\"Generic Name of Drug\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'OutsideEnd'\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPrecision\":{\"expr\":{\"Literal\":{\"Value\":\"0L\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 712.46,
+          "width": 646.67,
+          "x": 633.29,
+          "y": 0.00,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"eb31f96e0e99a9d59007\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.034600401655013,\"y\":0,\"z\":0,\"width\":646.6742481066564,\"height\":712.4566285175059,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Clms)\"}],\"Category\":[{\"queryRef\":\"vw_dim_drug.Gnrc_Name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_fact_drug_sales_by_geo_provider\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"vw_dim_drug\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Tot_Clms\"}},\"Function\":0},\"Name\":\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Clms)\",\"NativeReferenceName\":\"Total Claims\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"Gnrc_Name\"},\"Name\":\"vw_dim_drug.Gnrc_Name\",\"NativeReferenceName\":\"Generic Name of Drug\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Tot_Clms\"}},\"Function\":0}}}]},\"columnProperties\":{\"vw_dim_drug.Gnrc_Name\":{\"displayName\":\"Generic Name of Drug\"},\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Clms)\":{\"displayName\":\"Total Claims\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'OutsideEnd'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 712.46,
+          "width": 646.67,
+          "x": 10.03,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 4",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ba92333612ba45604120",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"5a9d8665824d8d493a54\",\"layouts\":[{\"id\":0,\"position\":{\"x\":499,\"y\":333,\"width\":781,\"height\":387,\"z\":2,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"vw_dim_year.Year\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Drug_Cst)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_dim_year\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"vw_fact_drug_sales_by_geo_provider\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Year\"},\"Name\":\"vw_dim_year.Year\",\"NativeReferenceName\":\"Year\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"Tot_Drug_Cst\"}},\"Function\":0},\"Name\":\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Drug_Cst)\",\"NativeReferenceName\":\"Total Drug Cost Paid for all claims\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Year\"}}}]},\"columnProperties\":{\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Drug_Cst)\":{\"formatString\":\"\\\\$#,0.###############;(\\\\$#,0.###############);\\\\$#,0.###############\",\"displayName\":\"Total Drug Cost Paid for all claims\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}}}}],\"lineStyles\":[{\"properties\":{\"strokeTransparency\":{\"expr\":{\"Literal\":{\"Value\":\"50D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 387.00,
+          "width": 781.00,
+          "x": 499.00,
+          "y": 333.00,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"62751499cc0297d09777\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.034600401655013,\"y\":0,\"z\":0,\"width\":1269.934428609451,\"height\":323.3371240533282,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"barChart\",\"projections\":{\"Category\":[{\"queryRef\":\"vw_dim_drug.Brnd_Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Drug_Cst)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_fact_drug_sales_by_geo_provider\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"vw_dim_drug\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"Brnd_Name\"},\"Name\":\"vw_dim_drug.Brnd_Name\",\"NativeReferenceName\":\"Brand of Drug\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Tot_Drug_Cst\"}},\"Function\":0},\"Name\":\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Drug_Cst)\",\"NativeReferenceName\":\"Total Drug Cost Paid for all claims\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Tot_Drug_Cst\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Drug_Cst)\":{\"displayName\":\"Total Drug Cost Paid for all claims\"},\"vw_dim_drug.Brnd_Name\":{\"displayName\":\"Brand of Drug\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.1}}}}},\"labelPosition\":{\"expr\":{\"Literal\":{\"Value\":\"'OutsideEnd'\"}}},\"optimizeLabelDisplay\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1000D\"}}}}}],\"ribbonBands\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"valueAxis\":[{\"properties\":{\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'Verdana'\"}}}}}],\"categoryAxis\":[{\"properties\":{\"labelColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}},\"fontFamily\":{\"expr\":{\"Literal\":{\"Value\":\"'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 323.34,
+          "width": 1269.93,
+          "x": 10.03,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"83262179d4cd6591ca6c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":10.034600401655013,\"y\":333.37172445498317,\"z\":1,\"width\":489.4655084807278,\"height\":386.8895932638099}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Category\":[{\"queryRef\":\"vw_dim_year.Year\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_30day_Fills)\"},{\"queryRef\":\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Clms)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v1\",\"Entity\":\"vw_fact_drug_sales_by_geo_provider\",\"Type\":0},{\"Name\":\"v\",\"Entity\":\"vw_dim_year\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Year\"},\"Name\":\"vw_dim_year.Year\",\"NativeReferenceName\":\"Year\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"Tot_30day_Fills\"}},\"Function\":0},\"Name\":\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_30day_Fills)\",\"NativeReferenceName\":\"Total 30 day Fills\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"Tot_Clms\"}},\"Function\":0},\"Name\":\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Clms)\",\"NativeReferenceName\":\"Total Claims\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Year\"}}}]},\"columnProperties\":{\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Clms)\":{\"displayName\":\"Total Claims\"},\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_30day_Fills)\":{\"displayName\":\"Total 30 day Fills\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"fontSize\":{\"expr\":{\"Literal\":{\"Value\":\"12D\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0.1}}}}}}}],\"valueAxis\":[{\"properties\":{\"gridlineColor\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":2,\"Percent\":-0.5}}}}}}}],\"seriesLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 386.89,
+          "width": 489.47,
+          "x": 10.03,
+          "y": 333.37,
+          "z": 1.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"334L\"}}}}}]}}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "ce6b15632d055e884d0b",
+      "ordinal": 3,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"16a989c70565d903e8c1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.511677282377919,\"y\":341.0615711252654,\"z\":1000,\"width\":608.7473460721868,\"height\":379.10828025477707,\"tabOrder\":1000}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"vw_dim_provider.Prscrbr_Type_Src\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Day_Suply)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_dim_provider\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"vw_fact_drug_sales_by_geo_provider\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Prscrbr_Type_Src\"},\"Name\":\"vw_dim_provider.Prscrbr_Type_Src\",\"NativeReferenceName\":\"Prescriber Source\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"Tot_Day_Suply\"}},\"Function\":0},\"Name\":\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Day_Suply)\",\"NativeReferenceName\":\"Total Day's Supply\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"Tot_Day_Suply\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Day_Suply)\":{\"displayName\":\"Total Day's Supply\",\"formatString\":\"0\"},\"vw_dim_provider.Prscrbr_Type_Src\":{\"displayName\":\"Prescriber Source\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Category, data value, percent of total'\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"vw_dim_provider\"}},\"Property\":\"Prscrbr_Type\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_dim_provider\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"vw_fact_drug_sales_by_geo_provider\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Prscrbr_Type\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"Tot_Day_Suply\"}},\"Function\":0}}}],\"Top\":20}}},\"Type\":2},{\"Name\":\"v\",\"Entity\":\"vw_dim_provider\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Prscrbr_Type\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":1,\"isHiddenInViewMode\":false}]",
+          "height": 379.11,
+          "width": 608.75,
+          "x": 9.51,
+          "y": 341.06,
+          "z": 1000.00
+        },
+        {
+          "config": "{\"name\":\"30c401aacbb779093c04\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.516728624535316,\"y\":0,\"z\":0,\"width\":1270.4832713754647,\"height\":325.9479553903346,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"treemap\",\"projections\":{\"Group\":[{\"queryRef\":\"vw_dim_provider.Prscrbr_Type\",\"active\":true}],\"Values\":[{\"queryRef\":\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Day_Suply)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_dim_provider\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"vw_fact_drug_sales_by_geo_provider\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Prscrbr_Type\"},\"Name\":\"vw_dim_provider.Prscrbr_Type\",\"NativeReferenceName\":\"Prescriber Type\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"Tot_Day_Suply\"}},\"Function\":0},\"Name\":\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Day_Suply)\",\"NativeReferenceName\":\"Total Day's Supply\"}]},\"columnProperties\":{\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Day_Suply)\":{\"displayName\":\"Total Day's Supply\"},\"vw_dim_provider.Prscrbr_Type\":{\"displayName\":\"Prescriber Type\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"dataPoint\":[{\"properties\":{},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}],\"categoryLabels\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}},\"selector\":{\"data\":[{\"dataViewWildcard\":{\"matchingOption\":1}}]}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"vw_dim_provider\"}},\"Property\":\"Prscrbr_Type\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"subquery\",\"Expression\":{\"Subquery\":{\"Query\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_dim_provider\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"vw_fact_drug_sales_by_geo_provider\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Prscrbr_Type\"},\"Name\":\"field\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"Tot_Day_Suply\"}},\"Function\":0}}}],\"Top\":20}}},\"Type\":2},{\"Name\":\"v\",\"Entity\":\"vw_dim_provider\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Prscrbr_Type\"}}],\"Table\":{\"SourceRef\":{\"Source\":\"subquery\"}}}}}]},\"type\":\"TopN\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 325.95,
+          "width": 1270.48,
+          "x": 9.52,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"a252d285b3ae07e34a9c\",\"layouts\":[{\"id\":0,\"position\":{\"x\":686.9268634083751,\"y\":340.77592441385747,\"z\":2000,\"width\":593.4016097048874,\"height\":379.476029394611,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Day_Suply)\"}],\"Category\":[{\"queryRef\":\"vw_dim_year.Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_fact_drug_sales_by_geo_provider\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"vw_dim_year\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Tot_Day_Suply\"}},\"Function\":0},\"Name\":\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Day_Suply)\",\"NativeReferenceName\":\"Sum of Total Day's Supply\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"Year\"},\"Name\":\"vw_dim_year.Year\",\"NativeReferenceName\":\"Year\"}],\"OrderBy\":[{\"Direction\":1,\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"Year\"}}}]},\"columnProperties\":{\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Day_Suply)\":{\"displayName\":\"Sum of Total Day's Supply\"}},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[]",
+          "height": 379.48,
+          "width": 593.40,
+          "x": 686.93,
+          "y": 340.78,
+          "z": 2000.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "e33d1e7a878a5126cb6e",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"1a48a113079039c0076e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":669.9036701377427,\"y\":8.60426732287009,\"z\":2002,\"width\":609.6737988776521,\"height\":711.6958257059688,\"tabOrder\":2001}}],\"singleVisual\":{\"visualType\":\"clusteredBarChart\",\"projections\":{\"Category\":[{\"queryRef\":\"vw_dim_drug.Gnrc_Name\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Benes)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v1\",\"Entity\":\"vw_fact_drug_sales_by_geo_provider\",\"Type\":0},{\"Name\":\"v\",\"Entity\":\"vw_dim_drug\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Gnrc_Name\"},\"Name\":\"vw_dim_drug.Gnrc_Name\",\"NativeReferenceName\":\"Generic Name of Drug\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"Tot_Benes\"}},\"Function\":0},\"Name\":\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Benes)\",\"NativeReferenceName\":\"Total Beneficiaries\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"Tot_Benes\"}},\"Function\":0}}}]},\"columnProperties\":{\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Benes)\":{\"displayName\":\"Total Beneficiaries\"},\"vw_dim_drug.Gnrc_Name\":{\"displayName\":\"Generic Name of Drug\"}},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"labelDisplayUnits\":{\"expr\":{\"Literal\":{\"Value\":\"1D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 711.70,
+          "width": 609.67,
+          "x": 669.90,
+          "y": 8.60,
+          "z": 2002.00
+        },
+        {
+          "config": "{\"name\":\"34b12a43989046670407\",\"layouts\":[{\"id\":0,\"position\":{\"x\":147.5017255349158,\"y\":511.33931518770817,\"z\":2000,\"width\":420.3799177745101,\"height\":208.96077784113075,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"vw_dim_drug.Gnrc_Name\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_dim_drug\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Gnrc_Name\"},\"Name\":\"vw_dim_drug.Gnrc_Name\",\"NativeReferenceName\":\"Generic Name of Drug\"}]},\"columnProperties\":{\"vw_dim_drug.Gnrc_Name\":{\"displayName\":\"Generic Name of Drug\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Basic'\"}}}}}],\"general\":[{\"properties\":{}}]}}}",
+          "filters": "[]",
+          "height": 208.96,
+          "width": 420.38,
+          "x": 147.50,
+          "y": 511.34,
+          "z": 2000.00
+        },
+        {
+          "config": "{\"name\":\"563f79f068527c129aa5\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":2001}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 2001.00
+        },
+        {
+          "config": "{\"name\":\"5dd221a3b59703506008\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.833448368994388,\"y\":0,\"z\":0,\"width\":650.2367733997539,\"height\":511.33931518770817,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"map\",\"projections\":{\"Size\":[{\"queryRef\":\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Benes)\"}],\"Category\":[{\"queryRef\":\"vw_dim_geohraphy.Prscrbr_State_Abrvtn\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"v\",\"Entity\":\"vw_fact_drug_sales_by_geo_provider\",\"Type\":0},{\"Name\":\"v1\",\"Entity\":\"vw_dim_geohraphy\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v\"}},\"Property\":\"Tot_Benes\"}},\"Function\":0},\"Name\":\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Benes)\",\"NativeReferenceName\":\"Total Beneficiaries\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"v1\"}},\"Property\":\"Prscrbr_State_Abrvtn\"},\"Name\":\"vw_dim_geohraphy.Prscrbr_State_Abrvtn\",\"NativeReferenceName\":\"State of Prescriber\"}]},\"columnProperties\":{\"vw_dim_geohraphy.Prscrbr_State_Abrvtn\":{\"displayName\":\"State of Prescriber\"},\"Sum(vw_fact_drug_sales_by_geo_provider.Tot_Benes)\":{\"displayName\":\"Total Beneficiaries\"}},\"drillFilterOtherVisuals\":true,\"objects\":{\"bubbles\":[{\"properties\":{\"bubbleSize\":{\"expr\":{\"Literal\":{\"Value\":\"-5L\"}}}}}],\"categoryLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"enableBackground\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}},\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":1,\"Percent\":0}}}}}}}],\"heatMap\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"mapStyles\":[{\"properties\":{\"mapTheme\":{\"expr\":{\"Literal\":{\"Value\":\"'grayscale'\"}}}}}]},\"vcObjects\":{\"visualHeader\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 511.34,
+          "width": 650.24,
+          "x": 9.83,
+          "y": 0.00,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}
