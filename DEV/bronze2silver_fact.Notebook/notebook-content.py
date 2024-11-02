@@ -155,17 +155,6 @@ display(df_all_year)
 
 # CELL ********************
 
-df_all_year.write.mode("overwrite").saveAsTable("fact_medicare_silver")
-
-# METADATA ********************
-
-# META {
-# META   "language": "python",
-# META   "language_group": "synapse_pyspark"
-# META }
-
-# CELL ********************
-
 df_all_year.createOrReplaceTempView("fact")
 
 
@@ -176,38 +165,11 @@ df_all_year.createOrReplaceTempView("fact")
 # META   "language_group": "synapse_pyspark"
 # META }
 
-# CELL ********************
+# MARKDOWN ********************
 
-display(spark.sql(""" select \
- Prscrbr_NPI, Prscrbr_Last_Org_Name,Prscrbr_First_Name, Prscrbr_City, Prscrbr_State_FIPS,Prscrbr_Type, Prscrbr_Type_Src, Brnd_Name,Gnrc_Name , freq as number from 
-(select 
-distinct Prscrbr_NPI, Prscrbr_Last_Org_Name,Prscrbr_First_Name, Prscrbr_City, Prscrbr_State_FIPS,Prscrbr_Type, Prscrbr_Type_Src, Brnd_Name,Gnrc_Name , count(*) as freq  from fact \
- group by Prscrbr_NPI, Prscrbr_Last_Org_Name, Prscrbr_First_Name,Prscrbr_City, Prscrbr_State_FIPS,Prscrbr_Type,Prscrbr_Type_Src,Brnd_Name,Gnrc_Name \
- order by Prscrbr_NPI, Prscrbr_Last_Org_Name, Prscrbr_First_Name,Brnd_Name, Gnrc_Name asc
- ) as t where freq = 4
-"""))
-# surrogate key or a composite primary key can be defined for each row in the table using the columns 
+# 
+# ##### surrogate key or a composite primary key can be defined for each row in the table using the columns 
 # Prscrbr_NPI, Prscrbr_Last_Org_Name,Prscrbr_First_Name, Prscrbr_City, Prscrbr_State_FIPS,Prscrbr_Type, Prscrbr_Type_Src, Brnd_Name,Gnrc_Name ,GE65_Bene_Sprsn_Flag, GE65_Sprsn_Flag, year
-
-# METADATA ********************
-
-# META {
-# META   "language": "python",
-# META   "language_group": "synapse_pyspark"
-# META }
-
-# CELL ********************
-
-display(spark.sql(""" select 
-distinct Prscrbr_NPI, Prscrbr_Last_Org_Name,Prscrbr_First_Name, Prscrbr_City, Prscrbr_State_FIPS,Prscrbr_Type, Prscrbr_Type_Src, count(*) as freq  from fact group by Prscrbr_NPI, Prscrbr_Last_Org_Name, Prscrbr_First_Name,Prscrbr_City, Prscrbr_State_FIPS,Prscrbr_Type,Prscrbr_Type_Src order by Prscrbr_NPI, Prscrbr_Last_Org_Name, Prscrbr_First_Name asc
-"""))
-
-# METADATA ********************
-
-# META {
-# META   "language": "python",
-# META   "language_group": "synapse_pyspark"
-# META }
 
 # CELL ********************
 

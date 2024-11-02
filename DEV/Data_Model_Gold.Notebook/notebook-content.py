@@ -206,9 +206,9 @@ df_fact.write.mode('overwrite').format('parquet').partitionBy('year','drug_key')
 # META   "language_group": "synapse_pyspark"
 # META }
 
-# CELL ********************
+# MARKDOWN ********************
 
-
+# 
 # SCD Type 1 Example with SQL by directly upserting into the parquet table using incoming dataframe
 
 # IN EITHER CASE of incremental loading implementation, WE WILL NEED TO DO THE INCREMENTAL LOAD FOR SCD TYPE 1 IN BOTH THE PLACES - FILES AND TABLES, OR WE CAN JUST OVERWRITE IN BOTH THE PLACES . 
@@ -249,13 +249,6 @@ print("Updated DataFrame after SCD Type 1:")
 ##updated_df.show()
 
 
-
-# METADATA ********************
-
-# META {
-# META   "language": "python",
-# META   "language_group": "synapse_pyspark"
-# META }
 
 # MARKDOWN ********************
 
